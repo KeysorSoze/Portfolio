@@ -15,7 +15,7 @@
             <ul id=menu>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./projects.html">Projects</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -29,13 +29,22 @@
         </div>
         <div id=contactForm>
             <p>Send Message</p>
-            <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required autofocus="on"><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
-                <label for="message">Message:</label><br>
-                <textarea id="form-message" name="message" required rows="4" cols="25"></textarea>
+            <form action="https://formspree.io/f/mnqorvgk" method="POST">
+                <label for="name">
+                    Name:<br>
+                    <input type="text" id="name" name="name" required autofocus="on"><br>
+                </label>
+
+                <label for="email">
+                    Email:<br>
+                    <input type="email" id="email" name="email" required><br>
+                </label>
+
+                <label for="message">
+                    Message:<br>
+                    <textarea id="form-message" name="message" required rows="4" cols="25"></textarea>
+                </label>
+
                 <button type="submit">Submit</button>
             </form>
         </div>
